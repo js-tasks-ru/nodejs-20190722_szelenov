@@ -1,5 +1,7 @@
 function sum(a, b) {
-  /* ваш код */
+  if ([a,b].some(v => typeof v !== 'number')) {
+    throw new TypeError();
+  }
   return a + b;
 }
 
